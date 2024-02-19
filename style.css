@@ -79,6 +79,8 @@
     }
 }
 
+/* FONTS */
+
 p,
 h1,
 h2,
@@ -107,8 +109,6 @@ h6 {
 html {
     font-size: 100%;
 }
-
-/* 16px */
 
 h1 {
     font-size: 4.210rem;
@@ -144,6 +144,8 @@ small {
     font-size: 0.750rem;
     /* 12px */
 }
+
+/* RESET CSS */
 
 *,
 *::after,
@@ -422,6 +424,7 @@ button {
     justify-content: center;
 
     >p,
+    >h2,
     >.project-role,
     >.project-actions {
         text-align: start;
@@ -665,4 +668,151 @@ button {
     .hidden {
         transition: none;
     }
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 2.369rem
+    }
+}
+
+@media (max-width: 425px) {
+
+    html {
+        font-size: 75%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .about-banner,
+    .about-content {
+        margin: var(--spacing-xsmall-percentage);
+    }
+
+    .container-main {
+        width: 100%;
+    }
+
+    .project-title {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "image" "title";
+        min-height: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* height: 100vh; */
+    }
+
+    .project-title-description {
+        grid-area: title;
+        overflow: hidden;
+        padding: 0px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "details details" "languages frameworks";
+    }
+
+    .project-title-image img {
+        max-width: 100px;
+        max-height: 150px;
+    }
+
+    .project-title-image {
+        grid-area: image;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .image-21,
+    .image-22,
+    .image-23,
+    .image-31,
+    .image-32,
+    .image-33,
+    .image-41,
+    .image-42 {
+        grid-area: 1/1/1/1;
+        position: static;
+        visibility: hidden;
+    }
+
+    .image-21,
+    .image-32,
+    .image-41 {
+        visibility: visible;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container-main {
+        width: 80%;
+    }
+
+    .project-title-image img {
+        max-width: 150px;
+        max-height: 250px;
+    }
+
+    .image-21,
+    .image-22,
+    .image-23 {
+        border-radius: 20px;
+    }
+
+    .image-31,
+    .image-32,
+    .image-33 {
+        border-radius: 15px;
+    }
+
+    .image-41 {
+        right: 30px;
+    }
+
+    .project-title-description>* {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "details details" "languages frameworks";
+    }
+
+    .project-title-image img {
+        max-width: 200px;
+        max-height: 300px;
+    }
+
+    .image-21,
+    .image-22,
+    .image-23 {
+        border-radius: 25px;
+    }
+
+    .image-31,
+    .image-32,
+    .image-33 {
+        border-radius: 20px;
+    }
+
 }
