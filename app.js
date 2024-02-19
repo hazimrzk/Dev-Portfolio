@@ -20,8 +20,10 @@ function showOnScrollRepeated(entries) {
 }
 
 document.querySelectorAll('a').forEach(function (elem) {
-    elem.setAttribute('target', '_blank');
-    elem.setAttribute('rel', 'noopener');
+    if (elem.getAttribute("href") != "mailto:azizul.hazim.00@gmail.com") {
+        elem.setAttribute('target', '_blank');
+        elem.setAttribute('rel', 'noopener');
+    }
 })
 
 const observer = new IntersectionObserver(showOnScrollRepeated);
