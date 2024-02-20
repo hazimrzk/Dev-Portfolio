@@ -673,15 +673,56 @@ button {
 /* RESPONSIVENESS */
 
 @media (max-width: 320px) {
+
+    html {
+        font-size: 77.5%;
+    }
+
     h2 {
         font-size: 2.369rem
     }
+
+    p {
+        max-width: 25ch;
+    }
+
+    .tech-small {
+        font-size: 77.5%;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    h2 {
+        font-size: 2.5rem
+    }
+    
 }
 
 @media (max-width: 425px) {
 
+    .about-banner {
+        padding-top: 50px;
+    }
+
+    .project-image {
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    .hidden {
+        filter: blur(0px);
+        opacity: 1;
+    }
+
     html {
-        font-size: 75%;
+        font-size: 90%;
+    }
+
+    .project-title-image {
+        margin: 30px;
     }
 
 }
