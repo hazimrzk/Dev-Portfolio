@@ -1,8 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect } from 'react'
 
 function App() {
+
+  useEffect(() => {
+    function showOnScrollRepeated(entries) {
+      entries.forEach(entry => {
+          console.log(entry)
+          if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+          }
+          else {
+              entry.target.classList.remove('show');
+          }
+      });
+  }
+  
+  const observer = new IntersectionObserver(showOnScrollRepeated);
+  const hiddenElements = document.querySelectorAll('*');
+  hiddenElements.forEach((el) => observer.observe(el))
+  }, [])
+  
   return (
     <>
       <div className="wrapper">
@@ -38,7 +55,7 @@ function App() {
             <h6 className="hidden">LANGUAGES</h6>
             <h6><br></br></h6>
             <span className='tech-icon'>
-              <img src={viteLogo} alt="Dart"></img>
+              <img src="assets/icons/dart.svg" alt="Dart"></img>
               <span>Dart</span>
             </span>
             <span className='tech-icon'>

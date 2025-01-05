@@ -183,7 +183,7 @@ small {
 }
 
 div {
-  border: 1px solid royalblue;
+  /* border: 1px solid royalblue; */
   text-align: center;
 }
 
@@ -523,24 +523,24 @@ button {
 .project-image,
 .hidden,
 .tech-icon {
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .project-image {
-  /* filter: blur(5px); */
+  filter: blur(5px);
   transform: translateY(40px);
   transition: all 1s ease-out;
   transition-delay: 0.375s;
 }
 
 .hidden {
-  /* filter: blur(1px); */
+  filter: blur(1px);
   transition: all 1s ease-out;
   transition-delay: 0.375s;
 }
 
 .tech-icon {
-  /* filter: blur(1px); */
+  filter: blur(1px);
   transform: translateX(-15px);
   transition: all 1.5s ease-out;
 }
