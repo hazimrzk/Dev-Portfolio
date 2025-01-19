@@ -66,11 +66,23 @@
   --accent-700: #434c56;
   --accent-800: #2c333a;
   --accent-900: #16191d;
-  --accent-200-alt: #b3c1d092;
+  --accent-200-alt: #b3d0ce40;
 
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1;
   /* fix for Chrome */
+}
+
+.orelega-one-regular {
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: oblique;
+}
+
+.calistoga-regular {
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @supports (font-variation-settings: normal) {
@@ -81,6 +93,17 @@
 
 /* FONTS */
 
+body {
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url('/assets/backgrounds/backdrop.png');
+  background-repeat: repeat;
+}
+
+button,
+span,
+a,
 p,
 h1,
 h2,
@@ -88,22 +111,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--text);
+  font-family: "Orelega One", serif;
+  color: whitesmoke;
 }
 
-body {
-  font-family: 'Poppins';
-  font-weight: 400;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Poppins';
-  font-weight: 700;
+p {
+  font-family: "Calistoga", serif;
 }
 
 html {
@@ -164,8 +177,7 @@ small {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--background);
-  background-image: url(assets/backgrounds/nnnoise.svg);
+  /* background-image: url(public/assets/backgrounds/gradient.png); */
 }
 
 .container-main {
@@ -193,10 +205,6 @@ div {
   object-fit: contain;
 }
 
-a {
-  color: #000;
-}
-
 button {
   padding: 0.5em 2em;
   /* height: 150%; */
@@ -207,27 +215,27 @@ button {
   border: none;
 }
 
+.primary-button,
 .secondary-button {
-  background-color: var(--secondary-200);
+  background-color: #33210531;
   transition: 0.25s ease-out;
 }
 
+.primary-button:hover,
 .secondary-button:hover {
-  background-color: var(--secondary-300);
-  color: #000;
+  background-color: beige;
+  color: #332105;
   translate: 0px -5px;
   transition: 0.25s ease-out;
 }
 
-.primary-button {
-  background-color: var(--primary-600);
-  color: var(--background);
+a>i,a {
   transition: 0.25s ease-out;
 }
 
-.primary-button:hover {
-  background-color: var(--primary-700);
-  color: var(--background);
+a>i:hover,
+a:hover {
+  color: beige;
   translate: 0px -5px;
   transition: 0.25s ease-out;
 }
@@ -249,6 +257,14 @@ button {
   }
 
   >h5 {
+    color: beige;
+  }
+
+  >h3 {
+    color: beige;
+  }
+
+  /* >h5 {
       display: inline;
       background: linear-gradient(to right, var(--accent-900), var(--primary-600));
       -webkit-background-clip: text;
@@ -260,7 +276,7 @@ button {
       background: linear-gradient(to right, var(--accent-900), var(--primary-500));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-  }
+  } */
 }
 
 .about-content {
@@ -273,6 +289,11 @@ button {
   grid-gap: var(--spacing-default);
   margin-bottom: var(--spacing-xlarge);
   margin-top: var(--spacing-xlarge);
+  
+  >.about-languages>h6:first-child,
+  >.about-details>h6 {
+    color: beige;
+  }
 }
 
 .about-content * {
@@ -440,7 +461,11 @@ button {
   }
 
   >h6 {
-      color: var(--accent);
+      color: beige;
+  }
+
+  >div>span {
+      color: beige;
   }
 
   >* {
@@ -463,7 +488,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--accent-200-alt);
+  background-color: rgba(23, 15, 3, 0.248);
   padding: 0px 7.5px;
   margin: 0px 10px 0px 0px;
   border-radius: 15px/15px;
@@ -507,7 +532,7 @@ button {
 }
 
 .container-contacts {
-  min-height: 90vh;
+  min-height: 105vh;
 }
 
 .contacts-icons {

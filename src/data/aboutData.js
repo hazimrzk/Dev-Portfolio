@@ -1,8 +1,8 @@
 export default {
   info: {
-    fullname: "Hazim Razak",
-    title: "Engineer, Developer",
-    desc: "I build projects, both hardware and software.",
+    fullname: "HAZIM RAZAK",
+    title: "Engineer,  Developer",
+    desc: "I build projects, both hardware and software-wise.",
     cvpath: "/resume.pdf",
   },
   langs: [
@@ -16,6 +16,7 @@ export default {
     "ARM Assembly",
     "JavaScript",
     "MATLAB",
+    "Bash",
   ],
   tools: [
     "Flutter",
@@ -29,6 +30,7 @@ export default {
     "JavaScript",
     "Git",
     "GitHub",
+    "Ubuntu",
   ],
   contact: [
     { link: "mailto:azizul.hazim.00@gmail.com", icon: "fa fa-envelope fa-xl" },

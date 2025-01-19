@@ -5,8 +5,10 @@ export default function Contact() {
     return (
         <>
             <div className="container-main container-contacts">
-                <h3 className="hidden">Send a message!</h3>
-                <p className="hidden">sHave any inquiries? Don't hesitate to <strong>reach out</strong>.</p>
+                <a href="https://www.linkedin.com/in/hazim-razak-261620237/" text-decoration>
+                    <h3 className="hidden">Send a message!</h3>
+                </a>
+                <p className="hidden">Have any inquiries? Don't hesitate to <strong>reach out</strong>.</p>
                 <span className="contacts-icons hidden">
                     {abtData.contact.map((item) => {
                         return (

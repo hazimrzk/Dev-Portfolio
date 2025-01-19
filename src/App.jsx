@@ -6,6 +6,8 @@ import Contact from './components/Contact'
 function App() {
 
   useEffect(() => {
+    document.body.style.zoom = "95%";
+
     function showOnScrollRepeated(entries) {
       entries.forEach(entry => {
         // console.log(entry)

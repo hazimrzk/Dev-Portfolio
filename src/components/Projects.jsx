@@ -27,35 +27,26 @@ function ProjCard({ desc, img }) {
     )
 }
 
-function ProjImage(props) {
-
-    let images = props.props
-
-    const imageElements = images.map((img) => {
-        return (
-            <><img className={"hidden project-image image-" + img.class} src={"assets/images/" + img.src} alt=""></img></>
-        )
-    })
+function ProjImage({ props }) {
 
     return (
         <>
             <div className="project-title-image">
-                {imageElements}
+                {props.map((img) => {
+                    return (
+                        <><img className={"hidden project-image image-" + img.class} src={"assets/images/" + img.src} alt=""></img></>
+                    )
+                })}
             </div>
         </>
     )
 }
 
-function ProjDesc(props) {
+function ProjDesc({ props }) {
 
-    let techs = props.props.tech
-    let roles = props.props.role
-    let type = props.props.type
-    let title = props.props.name
-    let summary = props.props.summary
-    let links = props.props.links
+    console.log(JSON.stringify(props))
 
-    const techLists = techs.map((lang) => {
+    const techLists = props.tech.map((lang) => {
         return (
             <>
                 <span className='tech-icon'>
@@ -66,12 +57,21 @@ function ProjDesc(props) {
         )
     })
 
-    const roleElements = roles.map((role) => {
-        if (role.includes("(END)")) { return (<><span>{role.slice(0, -5)}</span></>) }
+    const roleElements = props.role.map((item) => {
+        if (item.includes("(END)")) { return (<><span>{item.slice(0, -5)}</span></>) }
         return (
             <>
-                <span>{role}</span>
+                <span>{item}</span>
                 <span>&nbsp; • &nbsp;</span>
+            </>
+        )
+    })
+
+    const linkElements = props.links.map((link) => {
+        console.log(JSON.stringify(link))
+        return (
+            <>
+                <a href={link.ref}><button className="primary-button">{link.text}</button></a>
             </>
         )
     })
@@ -79,18 +79,17 @@ function ProjDesc(props) {
     return (
         <>
             <div className="project-title-description">
-                <h6 className="hidden">{type}</h6>
-                <h2 className="hidden">{title}</h2>
+                <h6 className="hidden">{props.type}</h6>
+                <h2 className="hidden">{props.name}</h2>
                 <div className="project-tech hidden">
                     {techLists}
                 </div>
                 <div className="project-role hidden">
                     {roleElements}
                 </div>
-                <p className="hidden">{summary}</p>
+                <p className="hidden">{props.summary}</p>
                 <div className="project-actions hidden">
-                    <a href={links[0]}><button className="secondary-button">View Demo</button></a>
-                    <a href={links[1]}><button className="primary-button">Github Link</button></a>
+                    {linkElements}
                 </div>
             </div>
         </>
