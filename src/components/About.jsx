@@ -1,4 +1,5 @@
 import abtData from "../data/aboutData"
+import cvPath from "../data/CV.pdf"
 
 export default function About() {
 
@@ -28,7 +29,7 @@ function AboutBanner({ info, contact }) {
                 <p className="hidden"><br></br>{info.desc}<br></br><br></br><br></br></p>
                 <span className="hidden">{contactElements}</span>
                 <p><br></br><br></br></p>
-                <a href={info.cvpath} className="hidden" target="_blank"><button className="primary-button"> <strong> GET RESUME </strong> </button></a>
+                <a href={cvPath} className="hidden" target="_blank"><button className="primary-button"> <strong> GET RESUME </strong> </button></a>
             </div>
         </>
     )
@@ -73,7 +74,7 @@ function TechLists({ items }) {
         return (
             <>
                 <span className='tech-icon'>
-                    <img src={"Dev-Portfolio/public/assets/icons/" + item + ".svg"}></img>
+                    <img src={"Dev-Portfolio/assets/icons/" + item + ".svg"}></img>
                     <span>{item}</span>
                 </span>
             </>
