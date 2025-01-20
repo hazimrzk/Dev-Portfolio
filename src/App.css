@@ -778,9 +778,26 @@ a:hover {
   }
 
   .project-title-description {
+      align-items: center;
       grid-area: title;
       overflow: hidden;
       padding: 0px;
+
+      >p {
+        text-align: center;
+      }
+      >h2,
+      >.project-role{
+          text-align: center;
+      }
+      >.project-tech{        
+        align-content: center;
+        >.tech-icon:nth-child(5),
+        >.tech-icon:nth-child(1) {
+          opacity: 0;
+          width: 0;
+        }
+      }
   }
 
   .about-content {
@@ -791,10 +808,12 @@ a:hover {
 
   .project-title-image img {
       max-width: 100px;
-      max-height: 150px;
+      max-height: 200px;
   }
 
   .project-title-image {
+      padding-top: 40px;
+      padding-bottom: 20px;
       grid-area: image;
       display: grid;
       grid-template-columns: 1fr;
