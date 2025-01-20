@@ -34,7 +34,7 @@ function ProjImage({ props }) {
             <div className="project-title-image">
                 {props.map((img) => {
                     return (
-                        <><img className={"hidden project-image image-" + img.class} src={"Dev-Portfolio/assets/images/" + img.src} alt=""></img></>
+                        <><img className={"hidden project-image image-" + img.class} src={"assets/images/" + img.src} alt=""></img></>
                     )
                 })}
             </div>
@@ -48,7 +48,7 @@ function ProjDesc({ props }) {
         return (
             <>
                 <span className='tech-icon'>
-                    <img src={"Dev-Portfolio/assets/icons/" + lang + ".svg"} alt={lang}></img>
+                    <img src={"assets/icons/" + lang + ".svg"} alt={lang}></img>
                     <span>{lang}</span>
                 </span>
             </>
