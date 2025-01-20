@@ -73,7 +73,7 @@ function TechLists({ items }) {
         return (
             <>
                 <span className='tech-icon'>
-                    <img src={"assets/icons/" + item + ".svg"} alt={item}></img>
+                    <img src={"Dev-Portfolio/public/assets/icons/" + item + ".svg"}></img>
                     <span>{item}</span>
                 </span>
             </>

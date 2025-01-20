@@ -34,7 +34,7 @@ function ProjImage({ props }) {
             <div className="project-title-image">
                 {props.map((img) => {
                     return (
-                        <><img className={"hidden project-image image-" + img.class} src={"assets/images/" + img.src} alt=""></img></>
+                        <><img className={"hidden project-image image-" + img.class} src={"Dev-Portfolio/assets/images/" + img.src} alt=""></img></>
                     )
                 })}
             </div>
@@ -44,13 +44,11 @@ function ProjImage({ props }) {
 
 function ProjDesc({ props }) {
 
-    console.log(JSON.stringify(props))
-
     const techLists = props.tech.map((lang) => {
         return (
             <>
                 <span className='tech-icon'>
-                    <img src={"assets/icons/" + lang + ".svg"} alt={lang}></img>
+                    <img src={"Dev-Portfolio/assets/icons/" + lang + ".svg"} alt={lang}></img>
                     <span>{lang}</span>
                 </span>
             </>
@@ -68,7 +66,6 @@ function ProjDesc({ props }) {
     })
 
     const linkElements = props.links.map((link) => {
-        console.log(JSON.stringify(link))
         return (
             <>
                 <a href={link.ref}><button className="primary-button">{link.text}</button></a>

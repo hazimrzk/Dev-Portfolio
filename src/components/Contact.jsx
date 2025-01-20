@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <div className="container-main container-contacts">
-                <a href="https://www.linkedin.com/in/hazim-razak-261620237/" text-decoration>
+                <a href="https://www.linkedin.com/in/hazim-razak-261620237/">
                     <h3 className="hidden">Send a message!</h3>
                 </a>
                 <p className="hidden">Have any inquiries? Don't hesitate to <strong>reach out</strong>.</p>
