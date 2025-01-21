@@ -3,9 +3,10 @@ export default [
     desc: {
       projectNum: 4,
       type: "PROFESSIONAL EXPERIENCE",
-      name: "Intel Platfrom SW Execution - Media",
+      // name: "Intel Platfrom SW Execution - Media",
+      name: "Software Engineer",
       tech: ["Ubuntu", "Bash", "C++", "C", "Python"],
-      role: ["Software Engineer (Graduate Trainee)(END)"],
+      role: ["Intel Microelectronics (M)","Platfrom SW Execution","Media Processing(END)"],
       summary:
         "Involved in the development of Intel Graphics Media Stack for Intel Processors on IoT Linux systems, optimizing the hardware to execute media-processing tasks. Contributed by debugging & resolving issues, enabling features, & drove automation works.",
       links: [
