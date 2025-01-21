@@ -814,7 +814,7 @@ a:hover {
         >a>button {
             margin-right: var(--spacing-small);
             margin-left: var(--spacing-small);
-            padding: 0.5em 1em;
+            padding: 1em 2em;
         }
       }
   }
@@ -901,9 +901,6 @@ a:hover {
   .project-title-description{
     >.project-actions {
       >a>button {
-          /* margin-right: var(--spacing-xsmall);
-          margin-left: var(--spacing-xsmall);
-          padding: 0.3em 0.5em; */
           height: auto;
       }
     }
