@@ -115,7 +115,7 @@ h6 {
   color: whitesmoke;
 }
 
-p {
+p,h3 {
   font-family: "Calistoga", serif;
 }
 
@@ -245,6 +245,7 @@ a:hover {
 .about-banner {
   text-align: start;
   padding: 10px;
+  padding-top: 80px;
   margin: var(--spacing-small-percentage);
   margin-bottom: 0px;
 
@@ -739,7 +740,7 @@ a:hover {
   
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
 
   .about-banner {
       padding-top: 50px;
@@ -762,6 +763,18 @@ a:hover {
 
   .project-title-image {
       margin: 30px;
+  }
+
+  .container-contacts {
+    justify-content: space-evenly;
+    >p {
+      width: 15ch;
+      align-self: center;
+    }
+    >a {
+      align-self: center;
+      >h3 {width: 10ch;}
+    }
   }
 
 }

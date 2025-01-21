@@ -7,7 +7,7 @@ export default [
       tech: ["Ubuntu", "Bash", "C++", "C", "Python"],
       role: ["Software Engineer (Graduate Trainee)(END)"],
       summary:
-        "Contributed to the development of Intel Graphics Media Stack for Intel Processors on IoT Linux systems, optimizing the hardware to execute media-processing tasks. Contributed by debugging & resolving issues, enabling features, & drove automation works.",
+        "Involved in the development of Intel Graphics Media Stack for Intel Processors on IoT Linux systems, optimizing the hardware to execute media-processing tasks. Contributed by debugging & resolving issues, enabling features, & drove automation works.",
       links: [
         {
           ref: "https://hazimrzk.github.io/resume.pdf",
@@ -32,7 +32,7 @@ export default [
       tech: ["Dart", "Flutter", "Firebase", "Python", "OpenCV"],
       role: ["Project Lead", "UI Design", "Fullstack Development(END)"],
       summary:
-        "A project that aims to help our fellow engineering school students to find empty parking spots around the faculty. Helped to build an e-wallet app mockup for the project that shows vacant parking lots and automate payments via plate recognition system",
+        "A project that aims to help our fellow engineering school students to find empty parking spots around the faculty. Helped to build an e-wallet app mockup for the project that shows vacant parking lots and automate payments via plate recognition system.",
       links: [
         {
           ref: "https://www.youtube.com/playlist?list=PLSXjISPUq6Yu_NI-gJ7qmAB4NZ4hJx08s",
@@ -78,7 +78,7 @@ export default [
       tech: ["Dart", "Flutter", "Firebase", "Python"],
       role: ["UI Design", "Frontend Development(END)"],
       summary:
-        "A CoVid-19 case tracking app that provides a quick insight on the current cases in Malaysia. The data was gathered from a verified source, Kementerian Kesihatan Malaysia (KKM) and simple yet effective analytics were presented to the users",
+        "A CoVid-19 case tracking app that provides a quick insight on the current cases in Malaysia. The data was gathered from a verified source, Kementerian Kesihatan Malaysia (KKM) and simple yet effective analytics were presented to the users.",
       links: [
         {
           ref: "https://www.youtube.com/watch?v=o73hYmH77yQ",
