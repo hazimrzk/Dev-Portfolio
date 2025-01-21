@@ -149,7 +149,7 @@ h5 {
 }
 
 h6 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   /* 21.28px */
 }
 
@@ -312,7 +312,7 @@ a:hover {
   grid-area: details;
 
   >button {
-      height: 50px;
+      height: 75px;
       padding: 25px;
       justify-items: center;
   }
@@ -460,7 +460,7 @@ a:hover {
       flex-direction: row;
   }
 
-  >h6 {
+  >h6,>span {
       color: beige;
   }
 
@@ -506,7 +506,7 @@ a:hover {
 .project-actions {
   >a>button {
       margin-right: var(--spacing-default);
-      height: 150%;
+      height: 50px;
   }
 
   padding-bottom: 20px;
@@ -718,6 +718,17 @@ a:hover {
       font-size: 77.5%;
   }
 
+  .project-title-description{
+    >.project-actions {
+      >a>button {
+          margin-right: var(--spacing-xsmall);
+          margin-left: var(--spacing-xsmall);
+          padding: 0.3em 0.5em;
+          height: auto;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 375px) {
@@ -734,7 +745,7 @@ a:hover {
       padding-top: 50px;
   }
 
-  .project-image {
+  /* .project-image {
       filter: blur(0px);
       opacity: 1;
       transform: translateY(0px);
@@ -743,7 +754,7 @@ a:hover {
   .hidden {
       filter: blur(0px);
       opacity: 1;
-  }
+  } */
 
   html {
       font-size: 90%;
@@ -796,6 +807,14 @@ a:hover {
         >.tech-icon:nth-child(1) {
           opacity: 0;
           width: 0;
+        }
+      }
+
+      >.project-actions {
+        >a>button {
+            margin-right: var(--spacing-small);
+            margin-left: var(--spacing-small);
+            padding: 0.5em 1em;
         }
       }
   }
@@ -876,6 +895,19 @@ a:hover {
       margin: 10px;
   }
 
+}
+
+@media (max-width: 900px) {
+  .project-title-description{
+    >.project-actions {
+      >a>button {
+          /* margin-right: var(--spacing-xsmall);
+          margin-left: var(--spacing-xsmall);
+          padding: 0.3em 0.5em; */
+          height: auto;
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {

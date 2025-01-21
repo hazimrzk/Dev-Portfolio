@@ -76,7 +76,7 @@ function ProjDesc({ props }) {
     return (
         <>
             <div className="project-title-description">
-                <h6 className="hidden">{props.type}</h6>
+                <span className="hidden">{props.type}</span>
                 <h2 className="hidden">{props.name}</h2>
                 <div className="project-tech hidden">
                     {techLists}
