@@ -16,57 +16,7 @@
   --secondary: #bba595;
   --accent: #62707f;
 
-  --text-100: #efdcdc;
-  --text-200: #debaba;
-  --text-300: #ce9797;
-  --text-400: #be7474;
-  --text-500: #ad5252;
-  --text-600: #8b4141;
-  --text-700: #683131;
-  --text-800: #452121;
-  --text-900: #231010;
   --text-alp: #2d15155f;
-
-  --background-100: #e7e6e4;
-  --background-200: #d0cdc8;
-  --background-300: #b8b4ad;
-  --background-400: #a09b92;
-  --background-500: #888277;
-  --background-600: #6d685f;
-  --background-700: #524e47;
-  --background-800: #37342f;
-  --background-900: #1b1a18;
-
-  --primary-100: #dde3ee;
-  --primary-200: #bac7de;
-  --primary-300: #98abcd;
-  --primary-400: #758fbd;
-  --primary-500: #5374ac;
-  --primary-600: #425c8a;
-  --primary-700: #324567;
-  --primary-800: #212e45;
-  --primary-900: #111722;
-
-  --secondary-100: #ebe5e0;
-  --secondary-200: #d7cac1;
-  --secondary-300: #c3b0a2;
-  --secondary-400: #af9583;
-  --secondary-500: #9c7b63;
-  --secondary-600: #7c6250;
-  --secondary-700: #5d4a3c;
-  --secondary-800: #3e3128;
-  --secondary-900: #1f1914;
-
-  --accent-100: #e2e5e9;
-  --accent-200: #c5ccd3;
-  --accent-300: #a9b2bc;
-  --accent-400: #8c99a6;
-  --accent-500: #6f7f90;
-  --accent-600: #596673;
-  --accent-700: #434c56;
-  --accent-800: #2c333a;
-  --accent-900: #16191d;
-  --accent-200-alt: #b3d0ce40;
 
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1;
@@ -75,13 +25,11 @@
 
 .orelega-one-regular {
   font-family: "Orelega One", serif;
-  font-weight: 400;
   font-style: oblique;
 }
 
 .calistoga-regular {
   font-family: "Calistoga", serif;
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -95,10 +43,9 @@
 
 body {
   font-family: "Orelega One", serif;
-  font-weight: 400;
   font-style: normal;
   background-image: url('/assets/backgrounds/backdrop.png');
-  background-repeat: repeat;
+  background-repeat: repeat-y;
 }
 
 button,
@@ -113,6 +60,7 @@ h5,
 h6 {
   font-family: "Orelega One", serif;
   color: whitesmoke;
+  font-weight: normal;
 }
 
 p,h3 {
@@ -207,7 +155,6 @@ div {
 
 button {
   padding: 0.5em 2em;
-  /* height: 150%; */
   border-radius: 7.5px;
   font-style: 'Poppins';
   font-size: var(--p);
@@ -325,10 +272,6 @@ a:hover {
 
 .about-frameworks {
   grid-area: frameworks;
-}
-
-.about-tools {
-  grid-area: tools;
 }
 
 /* PROJECTS */
@@ -456,6 +399,10 @@ a:hover {
       max-width: 45ch;
   }
 
+  >h2 {
+    letter-spacing: -1.5px;
+  }
+
   >.project-actions {
       display: flex;
       flex-direction: row;
@@ -473,11 +420,6 @@ a:hover {
       margin: 20px;
   }
 
-  /* >h2 {
-      background: linear-gradient(to right, var(--accent-700), var(--primary-600));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-  } */
 }
 
 .project-tech {
@@ -779,11 +721,48 @@ a:hover {
 
 }
 
+@media (max-width: 1024px) {
+
+  .about-content {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "details details" "languages frameworks";
+  }
+
+}
+
 @media (max-width: 650px) {
 
   .about-banner,
   .about-content {
       margin: var(--spacing-xsmall-percentage);
+      grid-template-rows: 2fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "details" "languages" "frameworks";
+
+      >.about-languages {
+        >h6:nth-child(2),
+        >h6:nth-child(4) {
+          height: 0;
+        }
+      }
+
+      >.about-frameworks {
+        >h6:nth-child(1),
+        >h6:nth-child(2) {
+          height: 0;
+          padding: 0px;
+          margin: 0px;
+        }
+      }
+      
+      >.about-frameworks {
+        >h6:nth-child(1),
+        >h6:nth-child(2),
+        >h6:nth-child(4) {
+          height: 0;
+        }
+      }
   }
 
   .container-main {
@@ -827,15 +806,9 @@ a:hover {
         >a>button {
             margin-right: var(--spacing-small);
             margin-left: var(--spacing-small);
-            padding: 1em 2em;
+            padding: 1em 1.6em;
         }
       }
-  }
-
-  .about-content {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "details details" "languages frameworks";
   }
 
   .project-title-image img {
@@ -922,11 +895,11 @@ a:hover {
 
 @media (max-width: 1024px) {
 
-  .about-content {
+  /* .about-content {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "details details" "languages frameworks";
-  }
+  } */
 
   .project-title-image img {
       max-width: 200px;
@@ -945,4 +918,10 @@ a:hover {
       border-radius: 20px;
   }
 
+}
+
+@media (min-width: 2160px) {
+  body {
+    background-size: 100% auto;
+  }
 }

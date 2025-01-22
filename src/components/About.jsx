@@ -29,7 +29,7 @@ function AboutBanner({ info, contact }) {
                 <p className="hidden"><br></br>{info.desc}<br></br><br></br><br></br></p>
                 <span className="hidden">{contactElements}</span>
                 <p><br></br><br></br></p>
-                <a href={cvPath} className="hidden" target="_blank"><button className="primary-button"> <strong> GET RESUME </strong> </button></a>
+                <a href={cvPath} className="hidden" target="_blank"><button className="primary-button"> GET RESUME </button></a>
             </div>
         </>
     )
