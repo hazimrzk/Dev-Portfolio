@@ -656,6 +656,26 @@ a:hover {
 
 /* RESPONSIVENESS */
 
+@media (min-width: 650px) and (max-width: 1080px) {
+  .project-title-description {
+    >.project-tech>.tech-icon:nth-child(4) {
+        opacity: 0;
+        width: 0;
+        transition: none;
+      }
+  }
+}
+
+@media (max-width: 1440px) {
+  .project-title-description {
+    >.project-tech>.tech-icon:nth-child(5) {
+      opacity: 0;
+      width: 0;
+      transition: none;
+      }
+  }
+}
+
 @media (max-width: 320px) {
 
   html {
@@ -745,6 +765,10 @@ a:hover {
 }
 
 @media (max-width: 650px) {
+
+  html {
+    font-size: 90%;
+  }
 
   .about-banner,
   .about-content {
