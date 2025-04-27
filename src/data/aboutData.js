@@ -1,6 +1,6 @@
 export default {
   info: {
-    fullname: "HAZIM RAZAK",
+    fullname: "Hazim Razak",
     title: "Engineer,  Developer",
     desc: "I build projects, both hardware and software-wise.",
     cvpath: "/resume.pdf",
@@ -13,7 +13,7 @@ export default {
     "C++",
     "C",
     "SQL",
-    "ARM Assembly",
+    "ARM Asm",
     "JavaScript",
     "MATLAB",
     "Bash",
@@ -27,7 +27,6 @@ export default {
     "OpenCV",
     "SQLite",
     "NumPy",
-    "JavaScript",
     "Git",
     "GitHub",
     "Ubuntu",

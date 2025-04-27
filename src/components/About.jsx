@@ -43,16 +43,16 @@ function AboutContent({ para, langs, tools }) {
                 <div className="about-details">
                     <h6 className="hidden">OVER THE YEARS</h6>
                     <h6><br></br></h6>
-                    {para.map(() => {
+                    {para.map((text) => {
                         return (<>
-                            <p className="hidden">{para[0]}</p>
+                            <p className="hidden">{text}</p>
                         </>)
                     })}
                 </div>
                 <div className="about-languages">
                     <h6 className="hidden">TECH STACKS</h6>
                     <h6><br></br></h6>
-                    <h6 className="hidden">LANGUAGES</h6>
+                    <h6 className="hidden">LANGUAGES                            . </h6>
                     <h6><br></br></h6>
                     <TechLists items={langs} />
                 </div>

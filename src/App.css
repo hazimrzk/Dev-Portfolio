@@ -44,7 +44,10 @@
 body {
   font-family: "Orelega One", serif;
   font-style: normal;
-  background-image: url('/assets/backgrounds/backdrop.png');
+  background-image: url('/assets/backgrounds/backdrop-lite.png');
+  /* background-size: 100%; */
+  /* image-rendering: crisp-edges; */
+  /* image-rendering: pixelated; */
   background-repeat: repeat-y;
 }
 
@@ -63,8 +66,10 @@ h6 {
   font-weight: normal;
 }
 
-p,h3 {
-  font-family: "Calistoga", serif;
+p {
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  /* letter-spacing: -0.05em;  */
 }
 
 html {
@@ -241,6 +246,10 @@ a:hover {
   >.about-languages>h6:first-child,
   >.about-details>h6 {
     color: beige;
+  }
+
+  >.about-languages >h6 {
+    white-space: pre-wrap;
   }
 }
 
@@ -586,6 +595,10 @@ a:hover {
       transition-delay: 300ms;
   }
 
+  >a {
+    text-decoration: none;
+  }
+
   >.contacts-icons {
       transition-delay: 450ms;
   }
@@ -699,9 +712,9 @@ a:hover {
       opacity: 1;
   } */
 
-  html {
+  /* html {
       font-size: 90%;
-  }
+  } */
 
   .project-title-image {
       margin: 30px;
@@ -920,7 +933,7 @@ a:hover {
 
 }
 
-@media (min-width: 2160px) {
+@media (min-width: 1080px) {
   body {
     background-size: 100% auto;
   }
