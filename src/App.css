@@ -42,7 +42,7 @@
 /* FONTS */
 
 body {
-  font-family: "Orelega One", serif;
+  font-family: "Calistoga", serif;
   font-style: normal;
   background-image: url('/assets/backgrounds/backdrop-lite.png');
   /* background-size: 100%; */
@@ -61,9 +61,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Orelega One", serif;
+  font-family: "Calistoga", serif;
   color: whitesmoke;
   font-weight: normal;
+}
+
+h1 {
+  letter-spacing: -0.02em; 
+}
+
+h2 {
+  font-family: "Orelega One", serif;
 }
 
 p {
@@ -768,6 +776,7 @@ a:hover {
 
   html {
     font-size: 90%;
+    transition: none;
   }
 
   .about-banner,

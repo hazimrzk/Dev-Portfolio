@@ -24,7 +24,7 @@ function AboutBanner({ info, contact }) {
     return (
         <>
             <div className="about-banner">
-                <h3 className="hidden">{info.fullname}<br></br></h3>
+                <h1 className="hidden">{info.fullname}<br></br></h1>
                 <h5 className="hidden">{info.title}</h5>
                 <p className="hidden"><br></br>{info.desc}<br></br><br></br><br></br></p>
                 <span className="hidden">{contactElements}</span>
